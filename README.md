@@ -49,9 +49,11 @@ There are several tools that are required to run the workshop such as `kubectl` 
 * Agenda, Notes, and calendar invites: [Google Doc](https://docs.google.com/document/d/1hYjhBhPvLVMf7gunooM-kE0wptMjMIORCmI2BOedCWI/edit?usp=sharing)
 
 comby -stdin -stdout -matcher . ':[first_line]\n:[rest]' 'New first line\n:[rest]' < input.txt > output.txt
-comby -stdin -stdout -matcher . ':[first_line~\d+\.\d+\.\d+]\n:[rest]' '2.0.0\n:[rest]' < input.txt > output.txt
-comby ':[first_line~\d+\.\d+\.\d+]\n:[rest]' '2.0.0\n:[rest]' input.txt -stdout > output.txt
 
+comby -stdin -stdout -matcher . ':[first_line~\d+\.\d+\.\d+]\n:[rest]' '2.0.0\n:[rest]' < input.txt > output.txt
+```
+comby ':[first_line~\d+\.\d+\.\d+]\n:[rest]' '2.0.0\n:[rest]' input.txt -stdout > output.txt
+```
 
 
 ## Security
