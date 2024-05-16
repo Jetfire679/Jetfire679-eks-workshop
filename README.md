@@ -48,6 +48,8 @@ There are several tools that are required to run the workshop such as `kubectl` 
 * Meeting link: [Chime Web Meeting Link](https://chime.aws/8607878433)
 * Agenda, Notes, and calendar invites: [Google Doc](https://docs.google.com/document/d/1hYjhBhPvLVMf7gunooM-kE0wptMjMIORCmI2BOedCWI/edit?usp=sharing)
 
+comby -stdin -stdout -matcher . ':[first_line]\n:[rest]' 'New first line\n:[rest]' < input.txt > output.txt
+
 ## Security
 
 See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
