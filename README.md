@@ -54,7 +54,9 @@ comby -stdin -stdout -matcher . ':[first_line~\d+\.\d+\.\d+]\n:[rest]' '2.0.0\n:
 ```
 comby ':[first_line~\d+\.\d+\.\d+]\n:[rest]' '2.0.0\n:[rest]' input.txt -stdout > output.txt
 ```
-
+```
+echo -e "1.1.1\nLine 2\nLine 3" | comby ':[first_line~\d+\.\d+\.\d+]\n:[rest]' '2.0.0\n:[rest]' -stdin -stdout > output.txt
+```
 
 ## Security
 
