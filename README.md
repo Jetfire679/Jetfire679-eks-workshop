@@ -50,6 +50,8 @@ There are several tools that are required to run the workshop such as `kubectl` 
 
 comby -stdin -stdout -matcher . ':[first_line]\n:[rest]' 'New first line\n:[rest]' < input.txt > output.txt
 comby -stdin -stdout -matcher . ':[first_line~\d+\.\d+\.\d+]\n:[rest]' '2.0.0\n:[rest]' < input.txt > output.txt
+comby ':[first_line~\d+\.\d+\.\d+]\n:[rest]' '2.0.0\n:[rest]' input.txt -stdout > output.txt
+
 
 
 ## Security
