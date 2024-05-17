@@ -57,7 +57,9 @@ comby ':[first_line~\d+\.\d+\.\d+]\n:[rest]' '2.0.0\n:[rest]' input.txt -stdout 
 ```
 echo -e "1.1.1\nLine 2\nLine 3" | comby ':[first_line~\d+\.\d+\.\d+]\n:[rest]' '2.0.0\n:[rest]' -stdin -stdout > output.txt
 ```
-
+```
+sed -i 's/\?ref=[0-9]\+\.[0-9]\+\.[0-9]\+/\?ref=new_version/' filename
+```
 ## Security
 
 See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
